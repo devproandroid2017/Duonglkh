@@ -8,11 +8,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
+import android.widget.TextView;
 
 public class SettingActivity extends AppCompatActivity {
 
     Switch sw;
     Button btnApply;
+    TextView txtTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +31,20 @@ public class SettingActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
+        txtTitle = (TextView) findViewById(R.id.txtSettings);
+        sw = (Switch) findViewById(R.id.swLanguage);
+        btnApply = (Button) findViewById(R.id.btnApply);
 
-
+        btnApply.setOnClickListener(clickListener);
     }
+
+    View.OnClickListener clickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (view.getId()== R.id.btnApply){
+
+            }
+        }
+    };
 
 }

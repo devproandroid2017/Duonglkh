@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:context="com.example.windows7.demoandroidapp.MainActivity"
-                tools:showIn="@layout/activity_main">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.windows7.demoandroidapp.MainActivity"
+    tools:showIn="@layout/activity_setting">
 
     <TextView
         android:id="@+id/txtSettings"
@@ -15,7 +16,7 @@
         android:layout_height="wrap_content"/>
     <Switch
         android:text="@string/language"
-        android:id="@+id/btnSw"
+        android:id="@+id/swLanguage"
         android:paddingTop="10dp"
         android:layout_below="@id/txtSettings"
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
         android:layout_centerHorizontal="true"/>
     <Button
         android:text="@string/ok"
-        android:layout_below="@+id/btnSw"
+        android:id="@+id/btnApply"
+        android:layout_below="@+id/swLanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
