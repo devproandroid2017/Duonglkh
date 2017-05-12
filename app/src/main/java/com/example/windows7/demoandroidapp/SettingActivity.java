@@ -45,7 +45,6 @@ public class SettingActivity extends AppCompatActivity {
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
             Locale locale = Locale.ENGLISH;
             if (view.getId()== R.id.btnApply){
                 Configuration configuration = getBaseContext().getResources().getConfiguration();
@@ -55,7 +54,8 @@ public class SettingActivity extends AppCompatActivity {
                     locale = new Locale("vi");
                 }
                 configuration.setLocale(locale);
-                getBaseContext().createConfigurationContext(configuration);
+                getApplicationContext().createConfigurationContext(configuration);
+//                getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
                 Intent i = new Intent(SettingActivity.this, MainActivity.class);
                 startActivity(i);
             }
