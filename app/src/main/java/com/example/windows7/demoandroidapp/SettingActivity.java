@@ -1,5 +1,7 @@
 package com.example.windows7.demoandroidapp;
 
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class SettingActivity extends AppCompatActivity {
 
@@ -41,8 +45,19 @@ public class SettingActivity extends AppCompatActivity {
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if (view.getId()== R.id.btnApply){
 
+            Locale locale = Locale.ENGLISH;
+            if (view.getId()== R.id.btnApply){
+                Configuration configuration = getBaseContext().getResources().getConfiguration();
+                if (sw.isChecked()){
+                    locale= new Locale("en");
+                }else {
+                    locale = new Locale("vi");
+                }
+                configuration.setLocale(locale);
+                getBaseContext().createConfigurationContext(configuration);
+                Intent i = new Intent(SettingActivity.this, MainActivity.class);
+                startActivity(i);
             }
         }
     };
