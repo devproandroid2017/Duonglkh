@@ -6,4 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.windows7.demoandroidapp.Main2Activity">
 
+    <include layout="@layout/layout_settings"></include>
+
 </android.support.constraint.ConstraintLayout>

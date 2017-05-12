@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnChuyen;
+    Button btnChuyen, btnSettings;
     EditText userName, pass;
     String txtUser, txtPass, checkUser;
 
@@ -54,5 +54,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnSettings = (Button) findViewById(R.id.btnSettings);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(i);
+            }
+        });
     }
 }
