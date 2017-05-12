@@ -6,5 +6,6 @@
     <string name="txtPass" translatable="false">Mật Khẩu</string>
     <string name="fogotpass" translatable="false">Quên Mật Khẩu</string>
     <string name="txtuser" translatable="false">Tên đăng nhập</string>
-    <string name="language" translatable="false">Việt Nam</string>
+    <string name="language" translatable="false">English</string>
+    <string name="ok" translatable="false">Đồng Ý</string>
 </resources>

@@ -5,5 +5,7 @@
     <string name="txtuser" translatable="false">UserName</string>
     <string name="txtPass" translatable="false">Pass</string>
     <string name="fogotpass" translatable="false">Forgot password ?</string>
-    <string name="language" translatable="false">English</string>
+    <string name="language" translatable="false">Việt Nam</string>
+    <string name="ok" translatable="false">Apply</string>
+    <string name="title_activity_setting">SettingActivity</string>
 </resources>
