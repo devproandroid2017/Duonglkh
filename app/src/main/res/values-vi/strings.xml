@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DemoAndroidApp</string>
+    <string name="action_settings" translatable="false">Cài đặt</string>
+    <string name="btn_login" translatable="false">Đăng Nhập</string>
+    <string name="txtPass" translatable="false">Mật Khẩu</string>
+    <string name="fogotpass" translatable="false">Quên Mật Khẩu</string>
+    <string name="txtuser" translatable="false">Tên đăng nhập</string>
+</resources>
