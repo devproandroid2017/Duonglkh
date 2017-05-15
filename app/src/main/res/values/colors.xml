@@ -2,8 +2,8 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#0081cb</color>
     <color name="colorInter">#4867aa</color>
-    <color name="colortxtLogin">#ffffff</color>
-    <color name="colorEditText">#ffffff</color>
+    <color name="colortxtLogin">#000</color>
+    <color name="colorEditText">#ffff</color>
 </resources>
