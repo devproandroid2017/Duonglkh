@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -42,20 +43,24 @@ public class SettingActivity extends AppCompatActivity {
         btnApply.setOnClickListener(clickListener);
     }
 
+    Locale locale = Locale.ENGLISH;
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Locale locale = Locale.ENGLISH;
             if (view.getId()== R.id.btnApply){
+
                 Configuration configuration = getBaseContext().getResources().getConfiguration();
-                if (sw.isChecked()){
+                if (!sw.isChecked()){
                     locale= new Locale("en");
+                    Toast.makeText(getApplication(), "Tiếng Anh", Toast.LENGTH_LONG).show();
                 }else {
                     locale = new Locale("vi");
+                    Toast.makeText(getApplication(), "Tiếng Việt", Toast.LENGTH_LONG).show();
                 }
+//                configuration.getLocales().get(0);
                 configuration.setLocale(locale);
-                getApplicationContext().createConfigurationContext(configuration);
-//                getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
+//                getApplicationContext().createConfigurationContext(configuration);
+                getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
                 Intent i = new Intent(SettingActivity.this, MainActivity.class);
                 startActivity(i);
             }
