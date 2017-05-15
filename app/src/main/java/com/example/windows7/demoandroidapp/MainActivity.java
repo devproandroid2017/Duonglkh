@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        checkUser = "login";
+        checkUser = "Login";
 
         userName = (EditText) findViewById(R.id.userName);
 
