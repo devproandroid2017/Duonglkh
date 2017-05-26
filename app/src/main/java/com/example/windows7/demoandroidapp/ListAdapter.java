@@ -1,6 +1,5 @@
 package com.example.windows7.demoandroidapp;
 
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,11 +14,11 @@ import java.util.List;
  * Created by Windows 7 on 5/26/2017.
  */
 
-public class ContactAdapter extends BaseAdapter {
+public class ListAdapter extends BaseAdapter {
 
     ArrayList<List>contacts;
 
-    public ContactAdapter(ArrayList<List>contacts){
+    public ListAdapter(ArrayList<List>contacts){
         this.contacts = contacts;
     }
 
@@ -49,7 +48,7 @@ public class ContactAdapter extends BaseAdapter {
         TextView tvCPU = (TextView) rowView.findViewById(R.id.txtCPU);
         TextView tvMota = (TextView) rowView.findViewById(R.id.txtMota);
 
-        Contact contact = (Contact) contacts.get(position);
+        ListView contact = (ListView) contacts.get(position);
         tvName.setText(contact.name);
         tvCPU.setText(contact.cpu);
         tvMota.setText(contact.mota);

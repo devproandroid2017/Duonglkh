@@ -11,13 +11,13 @@ import java.util.ListIterator;
  * Created by Windows 7 on 5/26/2017.
  */
 
-public class Contact implements List {
+public class ListView implements List {
     public String name;
     public String mota;
     public String cpu;
     public String type;
 
-    public Contact(String name, String mota, String cpu, String type) {
+    public ListView(String name, String mota, String cpu, String type) {
         this.name = name;
         this.mota = mota;
         this.cpu = cpu;
