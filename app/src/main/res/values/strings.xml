@@ -8,4 +8,5 @@
     <string name="language" translatable="false">Việt Nam</string>
     <string name="ok" translatable="false">Apply</string>
     <string name="title_activity_setting">SettingActivity</string>
+    <string name="name">Ten item</string>
 </resources>
